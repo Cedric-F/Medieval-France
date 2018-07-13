@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MapStyle from './map-style.json';
 import Map from './Components/Map';
