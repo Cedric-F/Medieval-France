@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import Marker from './Marker'
+import Marker from './Marker';
 
 export default class Map extends Component {
 
@@ -36,7 +36,7 @@ export default class Map extends Component {
     let list = [];
     for (let l in locations) {
       locations[l].forEach((e, i) =>
-        list.push(<Marker key={e.name + '-' + i} type={l} name={e.name} lat={e.coordinates.lat} lng={e.coordinates.lng}/>)
+        list.push(<Marker key={e.name + '-' + i} type={l} name={e.name} photo={e.thumbnail} lat={e.coordinates.lat} lng={e.coordinates.lng}/>)
       )
     }
     return list
@@ -44,7 +44,6 @@ export default class Map extends Component {
 
   render() {
     const { locations, filter } = this.props;
-  	console.log(locations);
     return (
       <div className="map">
         <GoogleMapReact

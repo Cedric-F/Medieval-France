@@ -9,12 +9,11 @@ export default class List extends Component {
 
 	render() {
 
-    const { type, set, filter, query, isClicked } = this.props;
-    console.log(isClicked)
+    const { type, set, filter, isClicked } = this.props;
 
 		return (
 			<div>
-				<h1 className="list-view-title" tabIndex="0">
+				<h1 className="list-view-title" tabIndex="0" aria-label={`List of ${type}s. ${set.length} items.`}>
 					{/* Gives a legend icon to the categories titles */}
 					<img src={require(`../icons/${type}.png`)} alt={type + ' logo'} tabIndex="-1"/>
 					<span>{type}</span>
@@ -30,7 +29,7 @@ export default class List extends Component {
 						 */
 						set.map(e =>
 							new RegExp(!isClicked ? filter : '', 'ig').test(e.name) &&
-							<Link key={e.name} to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name}}}>
+							<Link key={e.name} to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name, photo: e.thumbnail}}}>
 								<li onClick={this.handleClick.bind(this)} className="list-view-item">{e.name}</li>
 							</Link>
 						)

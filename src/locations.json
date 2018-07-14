@@ -1,42 +1,48 @@
 	{
-		"Castles": [
+		"Castle": [
 			{
-				"name": "Versailles",
+				"name": "Palace of Versailles",
+				"thumbnail": "Versailles.jpg",
 				"coordinates": {
 					"lat": "48.8049",
 					"lng": "2.1204"
 				}
 			},
 			{
-				"name": "Castelnaud",
+				"name": "Château de Castelnaud-la-Chapelle",
+				"thumbnail": "Castelnaud.jpg",
 				"coordinates": {
 					"lat": "44.8160",
 					"lng": "1.1485"
 				}
 			},
 			{
-				"name": "Chambord",
+				"name": "Château de Chambord",
+				"thumbnail": "Chambord.jpg",
 				"coordinates": {
 					"lat": "47.6161",
 					"lng": "1.5172"
 				}
 			},
 			{
-				"name": "Chenonceau",
+				"name": "Château de Chenonceau",
+				"thumbnail": "Chenonceau.jpg",
 				"coordinates": {
 					"lat": "47.3249",
 					"lng": "1.0703"
 				}
 			},
 			{
-				"name": "Villandry",
+				"name": "Château de Villandry",
+				"thumbnail": "Villandry.jpg",
 				"coordinates": {
 					"lat": "47.3399",
 					"lng": "0.5143"
 				}
 			},
 			{
-				"name": "Cheverny",
+				"name": "Château de Cheverny",
+				"thumbnail": "Cheverny.jpg",
 				"coordinates": {
 					"lat": "47.5002",
 					"lng": "1.4580"
@@ -44,20 +50,23 @@
 			},
 			{
 				"name": "Vaux-le-Vicomte",
+				"thumbnail": "Vaux-le-Vicomte.jpg",
 				"coordinates": {
 					"lat": "48.5658",
 					"lng":"2.7141"
 				}
 			},
 			{
-				"name": "Fontainebleau",
+				"name": "Palace of Fontainebleau",
+				"thumbnail": "Fontainebleau.jpg",
 				"coordinates": {
 					"lat": "48.4021",
 					"lng": "2.6995"
 				}
 			},
 			{
-				"name": "Château du Haut-Koenigsbourg",
+				"name": "Château du Haut-Kœnigsbourg",
+				"thumbnail": "Haut-Kœnigsbourg.jpg",
 				"coordinates": {
 					"lat": "48.2495",
 					"lng": "7.3445"
@@ -65,13 +74,15 @@
 			},
 			{
 				"name": "Peyrepertuse",
+				"thumbnail": "Peyrepertuse.jpg",
 				"coordinates": {
 					"lat": "42.8708",
 					"lng": "2.5554"
 				}
 			},
 			{
-				"name": "Château d’Ussé",
+				"name": "Château d'Ussé",
+				"thumbnail": "Ussé.jpg",
 				"coordinates": {
 					"lat": "47.2500",
 					"lng": "0.2913"
@@ -79,78 +90,89 @@
 			},
 			{
 				"name": "Château d'Amboise",
+				"thumbnail": "Amboise.jpg",
 				"coordinates": {
 					"lat": "47.4134",
 					"lng": "0.9870"
 				}
 			},
 			{
-				"name": "Château des Ducs de Bretagne",
+				"name": "Château des ducs de Bretagne",
+				"thumbnail": "Ducs_de_Bretagne.jpg",
 				"coordinates": {
 					"lat": "47.2163",
 					"lng": "-1.5488"
 				}
 			},
 			{
-				"name": "Valençay",
+				"name": "Château de Valençay",
+				"thumbnail": "Valençay.jpg",
 				"coordinates": {
 					"lat": "47.1568",
 					"lng": "1.5592"
 				}
 			},
 			{
-				"name": "Chantilly",
+				"name": "Château de Chantilly",
+				"thumbnail": "Chantilly.jpg",
 				"coordinates": {
 					"lat": "49.1938",
 					"lng": "2.4852"
 				}
 			},
 			{
-				"name": "Logis Royal de Loches",
+				"name": "Château de Loches",
+				"thumbnail": "Loches.jpg",
 				"coordinates": {
 					"lat": "47.1249",
 					"lng": "0.9968"
 				}
 			},
 			{
-				"name": "Blois",
+				"name": "Château de Blois",
+				"thumbnail": "Blois.jpg",
 				"coordinates": {
 					"lat": "47.5854",
 					"lng": "1.3306"
 				}
 			},
 			{
-				"name": "Saumur",
+				"name": "Château de Saumur",
+				"thumbnail": "Saumur.jpg",
 				"coordinates": {
 					"lat": "47.2570",
 					"lng": "-0.0724"
 				}
 			},
 			{
-				"name": "Bonaguil",
+				"name": "Château de Bonaguil",
+				"thumbnail": "Bonaguil.jpg",
 				"coordinates": {
 					"lat": "44.5382",
 					"lng": "1.0143"
 				}
 			},
 			{
-				"name": "Langeais",
+				"name": "Château de Langeais",
+				"thumbnail": "Langeais.jpg",
 				"coordinates": {
 					"lat": "47.3247",
 					"lng": "0.4062"
 				}
 			}
 		],
-		"Cathedrals": [
+		"Cathedral": [
 			{
-				"name": "Notre-Dame de Chartres",
+				"name": "Chartres Cathedral",
+				"thumbnail": "Chartres.jpg",
 				"coordinates": {
 					"lat": "48.4478",
 					"lng": "1.4878"
 				}
 			},
 			{
-				"name": "Notre-Dame de Strasbourg",
+				"name": "Strasbourg Cathedral",
+				"thumbnail": "Strasbourg.jpg",
 				"coordinates": {
 					"lat": "48.5819",
 					"lng": "7.7510"
@@ -158,78 +180,89 @@
 			},
 			{
 				"name": "Notre-Dame de Paris",
+				"thumbnail": "Paris-Cathedral.jpg",
 				"coordinates": {
 					"lat": "48.8530",
 					"lng": "2.3499"
 				}
 			},
 			{
-				"name": "Notre-Dame de Reims",
+				"name": "Reims Cathedral",
+				"thumbnail": "Reims.jpg",
 				"coordinates": {
 					"lat": "49.2539",
 					"lng": "4.0340"
 				}
 			},
 			{
-				"name": "Notre-Dame de l’Assomption de Rouen",
+				"name": "Rouen Cathedral",
+				"thumbnail": "Rouen.jpg",
 				"coordinates": {
 					"lat": "49.4402",
 					"lng": "1.0950"
 				}
 			},
 			{
-				"name": "Notre-Dame d’Amiens",
+				"name": "Amiens Cathedral",
+				"thumbnail": "Amiens.jpg",
 				"coordinates": {
 					"lat": "49.8946",
 					"lng": "2.3020"
 				}
 			},
 			{
-				"name": "Saint-Cécile d’Albi",
+				"name": "Albi Cathedral",
+				"thumbnail": "Albi.jpg",
 				"coordinates": {
 					"lat": "43.9283",
 					"lng": "2.1426"
 				}
 			},
 			{
-				"name": "La cathédrale Saint-Etienne de Metz",
+				"name": "Metz Cathedral",
+				"thumbnail": "Metz.jpg",
 				"coordinates": {
 					"lat": "49.1203",
 					"lng": "6.1758"
 				}
 			},
 			{
-				"name": "La cathédrale Saint-Etienne de Bourges",
+				"name": "Bourges Cathedral",
+				"thumbnail": "Bourges.jpg",
 				"coordinates": {
 					"lat": "47.0822",
 					"lng": "2.3992"
 				}
 			},
 			{
-				"name": "La cathédrale Saint-Pierre de Beauvais",
+				"name": "Beauvais Cathedral",
+				"thumbnail": "Beauvais.jpg",
 				"coordinates": {
 					"lat": "49.4326",
 					"lng": "2.0815"
 				}
 			}
 		],
-		"Cities": [
+		"City": [
 			{
 				"name": "Avignon",
+				"thumbnail": "Avignon.jpg",
 				"coordinates": {
 					"lat":  "43.9493",
 					"lng": "4.8055"
 				}
 			},
 			 {
-				"name": "Carcassone",
+				"name": "Carcassonne",
+				"thumbnail": "Carcassonne.jpg",
 				"coordinates": {
 					"lat":  "43.2122",
 					"lng": "2.3537"
 				}
 			},
 			 {
-				"name": "Guerande",
+				"name": "Guérande",
+				"thumbnail": "Guérande.jpg",
 				"coordinates": {
 					"lat":  "47.3280",
 					"lng": "-2.4298"
@@ -237,6 +270,7 @@
 			},
 			 {
 				"name": "Laon",
+				"thumbnail": "Laon.jpg",
 				"coordinates": {
 					"lat":  "49.5641",
 					"lng": "3.6199"
@@ -244,13 +278,15 @@
 			},
 			 {
 				"name": "Lyon",
+				"thumbnail": "Lyon.jpg",
 				"coordinates": {
 					"lat":  "45.7640",
 					"lng": "4.8357"
 				}
 			},
 			 {
-				"name": "Orleans",
+				"name": "Orléans",
+				"thumbnail": "Orléans.jpg",
 				"coordinates": {
 					"lat":  "47.9030",
 					"lng": "1.9093"
@@ -258,6 +294,7 @@
 			},
 			{
 				"name": "Paris",
+				"thumbnail": "Paris.jpg",
 				"coordinates": {
 					"lat":  "48.8566",
 					"lng": "2.3522"
@@ -265,13 +302,15 @@
 			},
 			 {
 				"name": "Provins",
+				"thumbnail": "Provins.jpg",
 				"coordinates": {
 					"lat":  "48.5601",
 					"lng": "3.2992"
 				}
 			},
 			 {
-				"name": "St-Malo",
+				"name": "Saint-Malo",
+				"thumbnail": "Saint-Malo.jpg",
 				"coordinates": {
 					"lat":  "48.6493",
 					"lng": "-2.0257"

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Modal, Button} from 'react-bootstrap';
+import {Modal, Button, Image} from 'react-bootstrap';
 
 export default class Fact extends Component {
   constructor(props, context) {
@@ -8,7 +8,8 @@ export default class Fact extends Component {
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
-      show: true
+      show: true,
+      results: []
     };
   }
 
@@ -18,9 +19,30 @@ export default class Fact extends Component {
     this.props.history.push('/');
   }
 
+  getWiki(name, type) {
+    fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts|images&titles=${name.replace(/\s/g, '_')}&exintro=1&imlimit=5`, {
+    	mode: 'cors',
+    	origin: '*',
+    	headers: {
+    		'Access-Control-Allow-Origin': 'http://localhost:3000',
+    		'Content-Type': 'application/json; charset=utf-8'
+    	}
+    })
+    .then(r => r.json())
+    .then(r => {
+    	let element = r.query.pages[Object.keys(r.query.pages)[0]];
+    	this.setState({results: element.extract})
+    })
+    .catch(e => console.log(e))
+  }
+
+	componentDidMount() {
+  	const {name, type} = this.props.data.location.state;
+		this.getWiki(name, type);
+	}
+
   render() {
-    const { type, name } = this.props.location.location.state;
-    console.log(type, name)
+  	const {name, type, photo} = this.props.data.location.state;
 
     return (
       <div>
@@ -31,27 +53,13 @@ export default class Fact extends Component {
           <Modal.Body>
             <h4>{type}</h4>
             <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            	{<Image src={require(`../images/photos/${photo}`)} responsive />}
             </p>
 
             <hr />
 
             <h4>History</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Nesciunt itaque nemo dolorem veritatis numquam distinctio consequuntur quidem, ex magni, eligendi!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Libero rerum a molestiae repudiandae error hic minima sint, doloribus nihil dolor eligendi
-              est sunt perferendis excepturi ad eius neque impedit consequatur optio quos eaque beatae
-              laudantium ratione aspernatur sequi. Consectetur, voluptatum.
-            </p>
-            <p>
-              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-              dui. Donec ullamcorper nulla non metus auctor fringilla.
-            </p>
+            <p dangerouslySetInnerHTML={{__html: this.state.results}} />
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.handleClose}>Close</Button>

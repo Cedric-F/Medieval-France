@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import List from './List'
+import List from './List';
 
 export default class Filter extends Component {
 
@@ -26,10 +26,11 @@ export default class Filter extends Component {
 					  * The input field receives the App's "handleQuery" method passed down as a the "query" prop.
 					  * On change, update the App's state with the new query so it can render the corresponding elements only.
 					  */}
-					<input tabIndex="1" id="search" onChange={(e) => query(e.target.value, false)} type="text" maxLength={30} className="search-input" />
+					<input aria-label={`Start typing your research.`} tabIndex="1" id="search" onChange={(e) => query(e.target.value, false)} type="text" maxLength={30} className="search-input" />
 					{
 						this.renderLists(locations)
 					}
+					<a style={{fontSize: 0}} href='#search' aria-label="Back to the top.">Back to the top.</a>
 				</div>
 			</div>
 		)
