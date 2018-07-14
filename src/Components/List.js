@@ -16,7 +16,7 @@ export default class List extends Component {
 			<div>
 				<h1 className="list-view-title" tabIndex="0">
 					{/* Gives a legend icon to the categories titles */}
-					<img src={require(`../icons/${type}.png`)} alt={type + ' logo'}/>
+					<img src={require(`../icons/${type}.png`)} alt={type + ' logo'} tabIndex="-1"/>
 					<span>{type}</span>
 				</h1>
 				<ul className="list-view">
@@ -29,7 +29,11 @@ export default class List extends Component {
 						 * so the user can choose another location.
 						 */
 						set.map(e =>
-							new RegExp(!isClicked ? filter : '', 'i').test(e.name) && <Link to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name}}}><li onClick={this.handleClick.bind(this)} key={e.name} className="list-view-item">{e.name}</li></Link>)
+							new RegExp(!isClicked ? filter : '', 'ig').test(e.name) &&
+							<Link key={e.name} to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name}}}>
+								<li onClick={this.handleClick.bind(this)} className="list-view-item">{e.name}</li>
+							</Link>
+						)
 					}
 				</ul>
 			</div>
