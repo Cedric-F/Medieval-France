@@ -1,56 +1,56 @@
 	{
 		"Castles": [
 			{
-				"name": "Château de Versailles",
+				"name": "Versailles",
 				"coordinates": {
 					"lat": "48.8049",
 					"lng": "2.1204"
 				}
 			},
 			{
-				"name": "Château de Castelnaud",
+				"name": "Castelnaud",
 				"coordinates": {
 					"lat": "44.8160",
 					"lng": "1.1485"
 				}
 			},
 			{
-				"name": "Château de Chambord",
+				"name": "Chambord",
 				"coordinates": {
 					"lat": "47.6161",
 					"lng": "1.5172"
 				}
 			},
 			{
-				"name": "Château de Chenonceau",
+				"name": "Chenonceau",
 				"coordinates": {
 					"lat": "47.3249",
 					"lng": "1.0703"
 				}
 			},
 			{
-				"name": "Château de Villandry",
+				"name": "Villandry",
 				"coordinates": {
 					"lat": "47.3399",
 					"lng": "0.5143"
 				}
 			},
 			{
-				"name": "Château de Cheverny",
+				"name": "Cheverny",
 				"coordinates": {
 					"lat": "47.5002",
 					"lng": "1.4580"
 				}
 			},
 			{
-				"name": "Château de Vaux-le-Vicomte",
+				"name": "Vaux-le-Vicomte",
 				"coordinates": {
 					"lat": "48.5658",
 					"lng":"2.7141"
 				}
 			},
 			{
-				"name": "Château de Fontainebleau",
+				"name": "Fontainebleau",
 				"coordinates": {
 					"lat": "48.4021",
 					"lng": "2.6995"
@@ -64,7 +64,7 @@
 				}
 			},
 			{
-				"name": "Château de Peyrepertuse",
+				"name": "Peyrepertuse",
 				"coordinates": {
 					"lat": "42.8708",
 					"lng": "2.5554"
@@ -92,14 +92,14 @@
 				}
 			},
 			{
-				"name": "Château de Valençay",
+				"name": "Valençay",
 				"coordinates": {
 					"lat": "47.1568",
 					"lng": "1.5592"
 				}
 			},
 			{
-				"name": "Château de Chantilly",
+				"name": "Chantilly",
 				"coordinates": {
 					"lat": "49.1938",
 					"lng": "2.4852"
@@ -113,28 +113,28 @@
 				}
 			},
 			{
-				"name": "Château de Blois",
+				"name": "Blois",
 				"coordinates": {
 					"lat": "47.5854",
 					"lng": "1.3306"
 				}
 			},
 			{
-				"name": "Château de Saumur",
+				"name": "Saumur",
 				"coordinates": {
 					"lat": "47.2570",
 					"lng": "-0.0724"
 				}
 			},
 			{
-				"name": "Château de Bonaguil",
+				"name": "Bonaguil",
 				"coordinates": {
 					"lat": "44.5382",
 					"lng": "1.0143"
 				}
 			},
 			{
-				"name": "Château de Langeais",
+				"name": "Langeais",
 				"coordinates": {
 					"lat": "47.3247",
 					"lng": "0.4062"
@@ -256,6 +256,13 @@
 					"lng": "1.9093"
 				}
 			},
+			{
+				"name": "Paris",
+				"coordinates": {
+					"lat":  "48.8566",
+					"lng": "2.3522"
+				}
+			},
 			 {
 				"name": "Provins",
 				"coordinates": {
@@ -268,13 +275,6 @@
 				"coordinates": {
 					"lat":  "48.6493",
 					"lng": "-2.0257"
-				}
-			},
-			{
-				"name": "Paris",
-				"coordinates": {
-					"lat":  "48.8566",
-					"lng": "2.3522"
 				}
 			}
 		]

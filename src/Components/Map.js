@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
-import locations from '../locations.json'
 
 export default class Map extends Component {
+
 	static defaultProps = {
     center: {
       lat: 48,
@@ -14,6 +14,10 @@ export default class Map extends Component {
 
   };
 
+  /*
+   * toggles some map options.
+   * Most important one is the custom style.
+   */
   mapOptions() {
   	return {
   		scrollwheel: true,
@@ -25,7 +29,10 @@ export default class Map extends Component {
   	}
   }
 
-  markers() {
+  /*
+   * Loop over the markers and renders a Marker component for each one, with the corresponding category and coordinates.
+   */
+  markers(locations) {
     let list = [];
     for (let l in locations) {
       locations[l].forEach((e, i) =>
@@ -36,12 +43,13 @@ export default class Map extends Component {
   }
 
   render() {
-  	console.log(locations)
+    const { locations, filter } = this.props;
+  	console.log(locations);
     return (
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div className="map">
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: 'AIzaSyDHQmuUZanQp42dV8KlcM_pcUx2jv0Nw4I',
+            key: 'AIzaSyDHQmuUZanQp42dV8KlcM_pcUx2jv0Nw4I', // Enable the Google Maps API
             languages: ['en', 'fr'],
             libraries:'places'
           }}
@@ -50,7 +58,11 @@ export default class Map extends Component {
           defaultZoom={this.props.zoom}
         >
         {
-          this.markers().map(e => e)
+          /*
+           * Renders the markers whose names match the query value.
+           * An empty query test relates to true so all the markers are rendered by default.
+           */
+          this.markers(locations).map(e => new RegExp(filter, 'i').test(e.props.name) && e)
         }
 
         </GoogleMapReact>

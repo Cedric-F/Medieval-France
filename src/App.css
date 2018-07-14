@@ -1,28 +1,119 @@
-.App {
+@font-face {
+    font-family: Cardinal;
+    src: url(./fonts/Cardinal.woff);
+}
+
+.app {
+	display: flex;
+	height: 100vh;
+}
+
+h1 {
+  font-family: 'Cardinal';
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.map {
+	height: calc(100vh - 20px);
+  width: 100%;
+  border: 10px solid;
+  border-image: url(./images/Map-Border.png) 10 10 10 10 fill;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.marker {
+
+	animation: bounce 1s ease-out;
 }
 
-.App-title {
-  font-size: 1.5em;
+.side-wrap {
+	width: 300px;
+	height: 100%;
+	background: url(./images/Side.png) no-repeat;
+	background-size: 100% 100%
 }
 
-.App-intro {
-  font-size: large;
+.side-panel {
+	height: 100%;
+	overflow-y: auto;
+	color: black;
+	text-shadow: 1px 0 #999;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.search-input {
+	display: block;
+	margin: 10px auto;
+}
+
+.list-view {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.list-view-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list-view-item {
+	margin: 5px 0;
+	font-family: 'Cardinal';
+	font-size: 1.5em;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+/*
+ * Marker Bounce effect
+ */
+
+@keyframes bounce {
+  0% {
+	transform:translate(-50%, -200%);
+    opacity: 0;
+  }
+  5% {
+  	transform:translate(-50%, -200%);
+    opacity: 0;
+  }
+  15% {
+  	transform:translate(-50%, -100%);
+
+  }
+  30% {
+  	transform:translate(-50%, -150%);
+  }
+  40% {
+  	transform:translate(-50%, -100%);
+
+  }
+  50% {
+  	transform:translate(-50%, -130%);
+  }
+  70% {
+  	transform:translate(-50%, -100%);
+
+  }
+  80% {
+  	transform:translate(-50%, -115%);
+  }
+  90% {
+  	transform:translate(-50%, -100%);
+
+  }
+  95% {
+  	transform:translate(-50%, -107%);
+  }
+  97% {
+  	transform:translate(-50%, -100%);
+
+  }
+  99% {
+  	transform:translate(-50%, -103%);
+  }
+  100% {
+  	transform:translate(-50%, -100%);
+
+    opacity: 1;
+  }
 }
