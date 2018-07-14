@@ -85,9 +85,11 @@ h1 {
 }
 
 .list-view-title {
+  margin: 0 auto;
+  width: 175px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .list-view-item {
@@ -100,7 +102,7 @@ h1 {
 }
 
 .list-view-item:hover {
-  background-color: #fbfcfd99;
+  background-color: rgba(251, 252, 253, 153);
 }
 
 /*

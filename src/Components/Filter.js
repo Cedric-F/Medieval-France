@@ -16,17 +16,17 @@ export default class Filter extends Component {
 
 	render() {
 
-    const { locations, query, filter, isOpen } = this.props;
+    const { locations, query, isOpen } = this.props;
 
 		return (
 			<div className={`side-wrap ${isOpen ? 'open' : 'close'}`}>
 				<div className="side-panel">
-					<label htmlFor="search" style={{display: 'none'}}>Search</label>
+					<label htmlFor="search" style={{display: 'none'}} tabIndex="0">Search</label>
 					{/*
 					  * The input field receives the App's "handleQuery" method passed down as a the "query" prop.
 					  * On change, update the App's state with the new query so it can render the corresponding elements only.
 					  */}
-					<input aria-label="Start typing your research." tabIndex="1" id="search" onChange={(e) => query(e.target.value, false)} type="text" maxLength={30} className="search-input" />
+					<input aria-label="Start typing your research." placeholder="Search by name..." tabIndex="1" id="search" onChange={(e) => query(e.target.value, false)} type="text" maxLength={30} className="search-input" />
 					{
 						this.renderLists(locations)
 					}

@@ -33,7 +33,7 @@ export default class Fact extends Component {
     	let element = r.query.pages[Object.keys(r.query.pages)[0]];
     	this.setState({results: element.extract})
     })
-    .catch(e => console.log(e))
+    .catch(e => {console.error(e); this.setState({results: 'Sorry! An error occured and we couldn\'t get the response from Wikipedia!<br/>' + e})})
   }
 
 	componentDidMount() {
@@ -44,7 +44,7 @@ export default class Fact extends Component {
   render() {
   	const {name, type, photo, source} = this.props.data.location.state;
   	const tooltip = (
-  		<Tooltip id="modal-tooltip" aria-label={tooltip} tabIndex="0">{source ? `Wikipedia and ${source}` : 'Wikipedia'}</Tooltip>
+  		<Tooltip id="modal-tooltip" tabIndex="0">{source ? `Wikipedia and ${source}` : 'Wikipedia'}</Tooltip>
   	)
 
     return (
@@ -57,7 +57,7 @@ export default class Fact extends Component {
             <h4>{type}</h4>
             <p>
             	{<Image src={require(`../images/photos/${photo}`)} alt={`A photo of ${name}`} tabIndex="0" responsive />}
-            	<OverlayTrigger overlay={tooltip}><a href="#">Sources</a></OverlayTrigger>
+            	<OverlayTrigger overlay={tooltip}><a href={`https://en.wikipedia.org/wiki/${name}`} target='_blank'>Sources</a></OverlayTrigger>
             </p>
 
             <hr />
@@ -67,7 +67,7 @@ export default class Fact extends Component {
 
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
+            <Button onClick={this.handleClose} name="Close" aria-label="Close the Info Window">Close</Button>
           </Modal.Footer>
         </Modal>
       </div>

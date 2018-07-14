@@ -37,16 +37,16 @@ class App extends Component {
       <div className="app">
         <Route exact path='/:Place' render={({location, history}) => <Fact resetQuery={this.handleQuery.bind(this)} history={history} data={{location}} />}/>
           {/*
-                   * Filter is the Side Panel containing the search input field and the list view.
-                   * We pass the handleQuery method as a prop so it can update the app state with the query value
-                   * and then pass this value to both the list-view AND the map
-                   * so it can render the corresponding list items and markers
-                   */}
+            * Filter is the Side Panel containing the search input field and the list view.
+            * We pass the handleQuery method as a prop so it can update the app state with the query value
+            * and then pass this value to both the list-view AND the map
+            * so it can render the corresponding list items and markers
+            */}
         <Filter isOpen={this.state.isOpen} filter={this.state.query} isClicked={this.state.isClicked} query={this.handleQuery.bind(this)} locations={locations}/>
           {/*
-                   * Holds the Google Map, provided by google-map-react package.
-                   * Pass down the query value, map style and location list to it.
-                   */}
+            * Holds the Google Map, provided by google-map-react package.
+            * Pass down the query value, map style and location list to it.
+            */}
         <Map onToggle={this.toggle.bind(this)} filter={this.state.query} isClicked={this.state.isClicked} style={MapStyle} locations={locations}/>
       </div>
     );

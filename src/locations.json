@@ -3,7 +3,7 @@
 			{
 				"name": "Palace of Versailles",
 				"thumbnail": "Versailles.jpg",
-				"source": "foo",
+				"source": "ncsu.edu",
 				"coordinates": {
 					"lat": "48.8049",
 					"lng": "2.1204"
@@ -37,7 +37,7 @@
 			{
 				"name": "Château de Villandry",
 				"thumbnail": "Villandry.jpg",
-				"source": "foo",
+				"source": "thepinsta.com",
 				"coordinates": {
 					"lat": "47.3399",
 					"lng": "0.5143"
@@ -46,7 +46,7 @@
 			{
 				"name": "Château de Cheverny",
 				"thumbnail": "Cheverny.jpg",
-				"source": "foo",
+				"source": "wallscover.com",
 				"coordinates": {
 					"lat": "47.5002",
 					"lng": "1.4580"
@@ -55,7 +55,6 @@
 			{
 				"name": "Vaux-le-Vicomte",
 				"thumbnail": "Vaux-le-Vicomte.jpg",
-				"source": "foo",
 				"coordinates": {
 					"lat": "48.5658",
 					"lng":"2.7141"
@@ -64,7 +63,6 @@
 			{
 				"name": "Palace of Fontainebleau",
 				"thumbnail": "Fontainebleau.jpg",
-				"source": "foo",
 				"coordinates": {
 					"lat": "48.4021",
 					"lng": "2.6995"
@@ -81,7 +79,6 @@
 			{
 				"name": "Peyrepertuse",
 				"thumbnail": "Peyrepertuse.jpg",
-				"source": "foo",
 				"coordinates": {
 					"lat": "42.8708",
 					"lng": "2.5554"
@@ -90,7 +87,7 @@
 			{
 				"name": "Château d'Ussé",
 				"thumbnail": "Ussé.jpg",
-				"source": "foo",
+				"source": "chateaudusse.fr",
 				"coordinates": {
 					"lat": "47.2500",
 					"lng": "0.2913"
@@ -107,7 +104,7 @@
 			{
 				"name": "Château des ducs de Bretagne",
 				"thumbnail": "Ducs_de_Bretagne.jpg",
-				"source": "foo",
+				"source": "tripulous.com",
 				"coordinates": {
 					"lat": "47.2163",
 					"lng": "-1.5488"
@@ -116,7 +113,6 @@
 			{
 				"name": "Château de Valençay",
 				"thumbnail": "Valençay.jpg",
-				"source": "foo",
 				"coordinates": {
 					"lat": "47.1568",
 					"lng": "1.5592"
@@ -125,7 +121,7 @@
 			{
 				"name": "Château de Chantilly",
 				"thumbnail": "Chantilly.jpg",
-				"source": "foo",
+				"source": "skyscrapercity.com",
 				"coordinates": {
 					"lat": "49.1938",
 					"lng": "2.4852"
@@ -151,7 +147,7 @@
 			{
 				"name": "Château de Saumur",
 				"thumbnail": "Saumur.jpg",
-				"source": "foo",
+				"source": "levolney.com",
 				"coordinates": {
 					"lat": "47.2570",
 					"lng": "-0.0724"
@@ -169,7 +165,6 @@
 			{
 				"name": "Château de Langeais",
 				"thumbnail": "Langeais.jpg",
-				"source": "foo",
 				"coordinates": {
 					"lat": "47.3247",
 					"lng": "0.4062"
@@ -188,7 +183,7 @@
 			{
 				"name": "Strasbourg Cathedral",
 				"thumbnail": "Strasbourg.jpg",
-				"source": "foo",
+				"source": "theculturetrip.com",
 				"coordinates": {
 					"lat": "48.5819",
 					"lng": "7.7510"
@@ -205,7 +200,6 @@
 			{
 				"name": "Reims Cathedral",
 				"thumbnail": "Reims.jpg",
-				"source": "foo",
 				"coordinates": {
 					"lat": "49.2539",
 					"lng": "4.0340"
@@ -214,7 +208,7 @@
 			{
 				"name": "Rouen Cathedral",
 				"thumbnail": "Rouen.jpg",
-				"source": "foo",
+				"source": "flickr.com",
 				"coordinates": {
 					"lat": "49.4402",
 					"lng": "1.0950"
@@ -240,7 +234,7 @@
 			{
 				"name": "Metz Cathedral",
 				"thumbnail": "Metz.jpg",
-				"source": "foo",
+				"source": "gites.fr",
 				"coordinates": {
 					"lat": "49.1203",
 					"lng": "6.1758"
@@ -299,7 +293,7 @@
 			 {
 				"name": "Lyon",
 				"thumbnail": "Lyon.jpg",
-				"source": "foo",
+				"source": "AirCorsica.com",
 				"coordinates": {
 					"lat":  "45.7640",
 					"lng": "4.8357"
@@ -316,7 +310,6 @@
 			{
 				"name": "Paris",
 				"thumbnail": "Paris.jpg",
-				"source": "foo",
 				"coordinates": {
 					"lat":  "48.8566",
 					"lng": "2.3522"
@@ -333,7 +326,7 @@
 			 {
 				"name": "Saint-Malo",
 				"thumbnail": "Saint-Malo.jpg",
-				"source": "foo",
+				"source": "EnNormandie.com",
 				"coordinates": {
 					"lat":  "48.6493",
 					"lng": "-2.0257"

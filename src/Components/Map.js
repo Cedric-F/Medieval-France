@@ -46,8 +46,8 @@ export default class Map extends Component {
   render() {
     const { locations, filter, onToggle } = this.props;
     return (
-      <div className="map" tabIndex="-1">
-        <Button style={{position: 'absolute', zIndex: 9999, top: "50px", left: "10px"}} onClick={onToggle}>
+      <div className="map" tabIndex="-1" role="application">
+        <Button tabIndex="0" name="Toggle" aria-label="Toggle Side Panel" style={{position: 'absolute', zIndex: 1049, top: "50px", left: "10px"}} onClick={onToggle}>
           <Glyphicon glyph="menu-hamburger" />
         </Button>
         <GoogleMapReact
