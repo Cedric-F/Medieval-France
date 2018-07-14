@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class List extends Component {
+
+	handleClick(e) {
+		this.props.query(e.target.textContent, true);
+	}
 
 	render() {
 
@@ -24,7 +29,7 @@ export default class List extends Component {
 						 * so the user can choose another location.
 						 */
 						set.map(e =>
-							new RegExp(!isClicked ? filter : '', 'i').test(e.name) && <li tabIndex="0" onClick={(e) => query(e.target.textContent, true)} key={e.name} className="list-view-item">{e.name}</li>)
+							new RegExp(!isClicked ? filter : '', 'i').test(e.name) && <Link to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name}}}><li onClick={this.handleClick.bind(this)} key={e.name} className="list-view-item">{e.name}</li></Link>)
 					}
 				</ul>
 			</div>

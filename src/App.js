@@ -37,7 +37,7 @@ class App extends Component {
     console.log(this.state)
     return (
       <div className="app">
-        <Route exact path='/:Place' render={({location, history}) => <Fact history={history} location={{location}} />}/>
+        <Route exact path='/:Place' render={({location, history}) => <Fact resetQuery={this.handleQuery.bind(this)} history={history} location={{location}} />}/>
           {/*
                    * Filter is the Side Panel container the search input field and the list view.
                    * We pass the handleQuery method as a prop so it can update the app state with the query value

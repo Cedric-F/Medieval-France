@@ -14,7 +14,8 @@ export default class Example extends React.Component {
 
   handleClose() {
     this.setState({ show: false });
-    this.props.history.push('/')
+    this.props.resetQuery({query: ''});
+    this.props.history.push('/');
   }
 
   render() {

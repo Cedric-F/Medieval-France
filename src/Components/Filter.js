@@ -26,7 +26,7 @@ export default class Filter extends Component {
 					  * The input field receives the App's "handleQuery" method passed down as a the "query" prop.
 					  * On change, update the App's state with the new query so it can render the corresponding elements only.
 					  */}
-					<input id="search" onChange={(e) => query(e.target.value, false)} type="text" maxLength={30} className="search-input" />
+					<input tabIndex="1" id="search" onChange={(e) => query(e.target.value, false)} type="text" maxLength={30} className="search-input" />
 					{
 						this.renderLists(locations)
 					}

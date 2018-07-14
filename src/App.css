@@ -60,6 +60,15 @@ h1 {
 	padding: 10px;
 }
 
+.list-view a,
+.list-view a:active,
+.list-view a:hover,
+.list-view a:focus,
+.list-view a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .list-view-title {
 	display: flex;
 	align-items: center;
@@ -84,52 +93,30 @@ h1 {
  */
 
 @keyframes bounce {
-  0% {
+  0%, 5% {
 	transform:translate(-50%, -200%);
     opacity: 0;
   }
-  5% {
-  	transform:translate(-50%, -200%);
-    opacity: 0;
-  }
-  15% {
+  15%, 40%, 70%, 90%, 97% {
   	transform:translate(-50%, -100%);
-
   }
   30% {
   	transform:translate(-50%, -150%);
   }
-  40% {
-  	transform:translate(-50%, -100%);
-
-  }
   50% {
   	transform:translate(-50%, -130%);
-  }
-  70% {
-  	transform:translate(-50%, -100%);
-
   }
   80% {
   	transform:translate(-50%, -115%);
   }
-  90% {
-  	transform:translate(-50%, -100%);
-
-  }
   95% {
   	transform:translate(-50%, -107%);
-  }
-  97% {
-  	transform:translate(-50%, -100%);
-
   }
   99% {
   	transform:translate(-50%, -103%);
   }
   100% {
   	transform:translate(-50%, -100%);
-
     opacity: 1;
   }
 }
