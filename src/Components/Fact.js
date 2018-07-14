@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Modal, Button, Image} from 'react-bootstrap';
+import {Modal, Button, Image, Tooltip, OverlayTrigger} from 'react-bootstrap';
 
 export default class Fact extends Component {
   constructor(props, context) {
@@ -42,7 +42,10 @@ export default class Fact extends Component {
 	}
 
   render() {
-  	const {name, type, photo} = this.props.data.location.state;
+  	const {name, type, photo, source} = this.props.data.location.state;
+  	const tooltip = (
+  		<Tooltip id="modal-tooltip" aria-label={tooltip} tabIndex="0">{source ? `Wikipedia and ${source}` : 'Wikipedia'}</Tooltip>
+  	)
 
     return (
       <div>
@@ -53,13 +56,15 @@ export default class Fact extends Component {
           <Modal.Body>
             <h4>{type}</h4>
             <p>
-            	{<Image src={require(`../images/photos/${photo}`)} responsive />}
+            	{<Image src={require(`../images/photos/${photo}`)} alt={`A photo of ${name}`} tabIndex="0" responsive />}
+            	<OverlayTrigger overlay={tooltip}><a href="#">Sources</a></OverlayTrigger>
             </p>
 
             <hr />
 
-            <h4>History</h4>
-            <p dangerouslySetInnerHTML={{__html: this.state.results}} />
+            <h4 tabIndex="0">History</h4>
+            <p dangerouslySetInnerHTML={{__html: this.state.results}} tabIndex="0" />
+
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.handleClose}>Close</Button>

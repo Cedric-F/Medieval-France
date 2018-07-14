@@ -13,7 +13,7 @@ export default class List extends Component {
 
 		return (
 			<div>
-				<h1 className="list-view-title" tabIndex="0" aria-label={`List of ${type}s. ${set.length} items.`}>
+				<h1 className="list-view-title" tabIndex="0" aria-label={`List of ${type}s.`}>
 					{/* Gives a legend icon to the categories titles */}
 					<img src={require(`../icons/${type}.png`)} alt={type + ' logo'} tabIndex="-1"/>
 					<span>{type}</span>
@@ -29,7 +29,7 @@ export default class List extends Component {
 						 */
 						set.map(e =>
 							new RegExp(!isClicked ? filter : '', 'ig').test(e.name) &&
-							<Link key={e.name} to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name, photo: e.thumbnail}}}>
+							<Link key={e.name} to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name, photo: e.thumbnail, source: e.source}}}>
 								<li onClick={this.handleClick.bind(this)} className="list-view-item">{e.name}</li>
 							</Link>
 						)

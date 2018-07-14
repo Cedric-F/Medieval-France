@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import {Glyphicon, Button} from 'react-bootstrap';
 import Marker from './Marker';
 
 export default class Map extends Component {
@@ -36,16 +37,19 @@ export default class Map extends Component {
     let list = [];
     for (let l in locations) {
       locations[l].forEach((e, i) =>
-        list.push(<Marker key={e.name + '-' + i} type={l} name={e.name} photo={e.thumbnail} lat={e.coordinates.lat} lng={e.coordinates.lng}/>)
+        list.push(<Marker key={e.name + '-' + i} type={l} source={e.source} name={e.name} photo={e.thumbnail} lat={e.coordinates.lat} lng={e.coordinates.lng}/>)
       )
     }
     return list
   }
 
   render() {
-    const { locations, filter } = this.props;
+    const { locations, filter, onToggle } = this.props;
     return (
-      <div className="map">
+      <div className="map" tabIndex="-1">
+        <Button style={{position: 'absolute', zIndex: 9999, top: "50px", left: "10px"}} onClick={onToggle}>
+          <Glyphicon glyph="menu-hamburger" />
+        </Button>
         <GoogleMapReact
           bootstrapURLKeys={{
             key: 'AIzaSyDHQmuUZanQp42dV8KlcM_pcUx2jv0Nw4I', // Enable the Google Maps API
