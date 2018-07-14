@@ -3,6 +3,17 @@
     src: url(./fonts/Cardinal.woff);
 }
 
+.infoWindow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999;
+  opacity: 0.5;
+}
+
 .app {
 	display: flex;
 	height: 100vh;
@@ -14,14 +25,14 @@ h1 {
 }
 
 .map {
-	height: calc(100vh - 20px);
+	height: calc(100vh);
   width: 100%;
   border: 10px solid;
   border-image: url(./images/Map-Border.png) 10 10 10 10 fill;
 }
 
 .marker {
-
+  cursor: pointer;
 	animation: bounce 1s ease-out;
 }
 
@@ -56,11 +67,16 @@ h1 {
 }
 
 .list-view-item {
+  padding: 5px;
 	margin: 5px 0;
 	font-family: 'Cardinal';
 	font-size: 1.5em;
 	font-weight: 700;
 	cursor: pointer;
+}
+
+.list-view-item:hover {
+  background-color: #fbfcfd99;
 }
 
 /*

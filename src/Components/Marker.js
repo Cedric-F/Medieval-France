@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Marker extends Component {
 
@@ -16,7 +17,7 @@ class Marker extends Component {
 
 		return (
 			<div style={center} title={name} className="marker">
-				<img src={require(`../icons/${type === "Cities" ? "Cities/" + name : type}.png`)} alt={name}/>
+				<Link to={{pathname: name.replace(/\s/g, '_'), state: {type: type, name: name} }}><img src={require(`../icons/${type === "Cities" ? "Cities/" + name : type}.png`)} alt={name}/></Link>
 			</div>
 		)
 	}
