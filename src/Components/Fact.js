@@ -16,36 +16,48 @@ export default class Fact extends Component {
   handleClose() {
     this.setState({ show: false });
     this.props.resetQuery('');
-    this.props.history.push('/');
+    this.props.history.push(`${process.env.PUBLIC_URL}/`);
   }
 
   getWiki(name, type) {
-    fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts|images&titles=${name.replace(/\s/g, '_')}&exintro=1&imlimit=5`, {
-    	mode: 'cors',
-    	origin: '*',
+
+    /*
+     * If the text is stored, no need to fetch it again.
+     */
+    if (typeof(Storage) && localStorage[name + ' text']) {
+      this.setState({results: localStorage[name + ' text']});
+      return;
+    }
+
+
+    fetch(`https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=${name.replace(/\s/g, '_')}&exintro=1&imlimit=5`, {
     	headers: {
-    		'Access-Control-Allow-Origin': 'http://localhost:3000',
+        'Origin': 'https://cedric-f.github.io/',
     		'Content-Type': 'application/json; charset=utf-8'
     	}
     })
     .then(r => r.json())
     .then(r => {
     	let element = r.query.pages[Object.keys(r.query.pages)[0]];
-    	this.setState({results: element.extract})
+      /*
+       * cache the text for later (offline ?) use.
+       */
+      localStorage.setItem(name + ' text', element.extract);
+    	this.setState({results: element.extract});
     })
-    .catch(e => {console.error(e); this.setState({results: 'Sorry! An error occured and we couldn\'t get the response from Wikipedia!<br/>' + e})})
+    .catch(e => {console.error(e, localStorage[name + ' text']); this.setState({results: 'Sorry! An error occured and we couldn\'t get the request results. Please check your network and try again.<br/>' + e})})
   }
 
 	componentDidMount() {
-  	const {name, type} = this.props.data.location.state;
+  	const { name, type } = this.props.data.location.state;
 		this.getWiki(name, type);
 	}
 
   render() {
-  	const {name, type, photo, source} = this.props.data.location.state;
+    const { name, type, photo, source } = this.props.data.location.state;
   	const tooltip = (
   		<Tooltip id="modal-tooltip" tabIndex="0">{source ? `Wikipedia and ${source}` : 'Wikipedia'}</Tooltip>
-  	)
+  	);
 
     return (
       <div>
@@ -56,8 +68,10 @@ export default class Fact extends Component {
           <Modal.Body>
             <h4>{type}</h4>
             <p>
-            	{<Image src={require(`../images/photos/${photo}`)} alt={`A photo of ${name}`} tabIndex="0" responsive />}
-            	<OverlayTrigger overlay={tooltip}><a href={`https://en.wikipedia.org/wiki/${name}`} target='_blank'>Sources</a></OverlayTrigger>
+            	<Image src={require(`../images/photos/${photo}`)} alt={`A photo of ${name}`} tabIndex="0" responsive />
+            	<OverlayTrigger overlay={tooltip}>
+                <a href={`https://en.wikipedia.org/wiki/${name}`} target='_blank'>Sources</a>
+              </OverlayTrigger>
             </p>
 
             <hr />

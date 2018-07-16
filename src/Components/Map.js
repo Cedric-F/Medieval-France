@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import {Glyphicon, Button} from 'react-bootstrap';
+import { Glyphicon, Button } from 'react-bootstrap';
 import Marker from './Marker';
 
 export default class Map extends Component {
@@ -10,9 +10,8 @@ export default class Map extends Component {
       lat: 48,
       lng: 2.3522
     },
-    zoom: 8,
+    zoom: 5,
     mapTypeId: 'terrain'
-
   };
 
   /*
@@ -46,8 +45,8 @@ export default class Map extends Component {
   render() {
     const { locations, filter, onToggle } = this.props;
     return (
-      <div className="map" tabIndex="-1" role="application">
-        <Button tabIndex="0" name="Toggle" aria-label="Toggle Side Panel" style={{position: 'absolute', zIndex: 1049, top: "50px", left: "10px"}} onClick={onToggle}>
+      <main className="map" tabIndex="-1" role="application">
+        <Button tabIndex="0" name="Toggle" aria-label="Toggle Side Panel" className="toggle-btn" onClick={onToggle}>
           <Glyphicon glyph="menu-hamburger" />
         </Button>
         <GoogleMapReact
@@ -69,7 +68,7 @@ export default class Map extends Component {
         }
 
         </GoogleMapReact>
-      </div>
+      </main>
   	);
   }
 }

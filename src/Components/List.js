@@ -14,8 +14,7 @@ export default class List extends Component {
 		return (
 			<div>
 				<div className="list-view-title" tabIndex="0" aria-label={`List of ${type}s.`}>
-					{/* Gives a legend icon to the categories titles */}
-					<img src={require(`../icons/${type}.png`)} alt={type + ' logo'}/>
+					<img src={require(`../icons/${type}.webp`)} alt={type + ' logo'}/>
 					<h1>{type}</h1>
 				</div>
 				<ul className="list-view">
@@ -30,7 +29,7 @@ export default class List extends Component {
 						set.map(e =>
 							new RegExp(!isClicked ? filter : '', 'ig').test(e.name) &&
 
-								<li key={e.name} onClick={this.handleClick.bind(this)} className="list-view-item"><Link to={{pathname: e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name, photo: e.thumbnail, source: e.source}}}>{e.name}</Link></li>
+								<li key={e.name} onClick={this.handleClick.bind(this)} className="list-view-item"><Link to={{pathname: process.env.PUBLIC_URL + '/' + e.type + '/' + e.name.replace(/\s/g, '_'), state: {type: e.type, name: e.name, photo: e.thumbnail, source: e.source}}}>{e.name}</Link></li>
 
 						)
 					}

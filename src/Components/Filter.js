@@ -16,12 +16,12 @@ export default class Filter extends Component {
 
 	render() {
 
-    const { locations, query, isOpen } = this.props;
+    const { locations, query, toggled } = this.props;
 
 		return (
-			<div className={`side-wrap ${isOpen ? 'open' : 'close'}`}>
+			<aside className={`side-wrap ${toggled && 'toggle'}`}>
 				<div className="side-panel">
-					<label htmlFor="search" style={{display: 'none'}} tabIndex="0">Search</label>
+					<label htmlFor="search" className="input-label" tabIndex="0">Search</label>
 					{/*
 					  * The input field receives the App's "handleQuery" method passed down as a the "query" prop.
 					  * On change, update the App's state with the new query so it can render the corresponding elements only.
@@ -30,9 +30,9 @@ export default class Filter extends Component {
 					{
 						this.renderLists(locations)
 					}
-					<a style={{fontSize: 0}} href='#search' aria-label="Back to the top.">Back to the top.</a>
+					<a className="back-to-top" href='#search' aria-label="Back to the top.">Back to the top.</a>
 				</div>
-			</div>
+			</aside>
 		)
 	}
 }

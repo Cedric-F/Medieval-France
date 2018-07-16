@@ -18,7 +18,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: true,
+      toggled: true,
       query: '',
       isClicked: false
     };
@@ -29,20 +29,20 @@ class App extends Component {
   }
 
   toggle() {
-    this.setState({isOpen: !this.state.isOpen});
+    this.setState({toggled: !this.state.toggled});
   }
 
   render() {
     return (
       <div className="app">
-        <Route exact path='/:Place' render={({location, history}) => <Fact resetQuery={this.handleQuery.bind(this)} history={history} data={{location}} />}/>
+        <Route exact path={`${process.env.PUBLIC_URL}/:Type/:Place`} render={({location, history}) =>  <Fact resetQuery={this.handleQuery.bind(this)} history={history} data={{location}} />}/>
           {/*
             * Filter is the Side Panel containing the search input field and the list view.
             * We pass the handleQuery method as a prop so it can update the app state with the query value
             * and then pass this value to both the list-view AND the map
             * so it can render the corresponding list items and markers
             */}
-        <Filter isOpen={this.state.isOpen} filter={this.state.query} isClicked={this.state.isClicked} query={this.handleQuery.bind(this)} locations={locations}/>
+        <Filter toggled={this.state.toggled} filter={this.state.query} isClicked={this.state.isClicked} query={this.handleQuery.bind(this)} locations={locations}/>
           {/*
             * Holds the Google Map, provided by google-map-react package.
             * Pass down the query value, map style and location list to it.

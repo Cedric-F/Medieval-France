@@ -1,12 +1,14 @@
 {
-  "homepage": "https://cedric-f.github.io/Medieval-France",
   "name": "medieval-france",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cedric-f.github.io/Medieval-France/",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "gh-pages": "^1.2.0",
     "google-map-react": "^1.0.5",
     "google-maps-react": "^2.0.2",
+    "memory-cache": "^0.2.0",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
     "react-burger-menu": "^2.5.2",
