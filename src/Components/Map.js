@@ -30,7 +30,7 @@ export default class Map extends Component {
   }
 
   /*
-   * Loop over the markers and renders a Marker component for each one, with the corresponding category and coordinates.
+   * Loop over the locations and renders a Marker component for each one, with the corresponding category and coordinates.
    */
   markers(locations) {
     let list = [];

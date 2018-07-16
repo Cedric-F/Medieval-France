@@ -13,6 +13,9 @@ export default class Fact extends Component {
     };
   }
 
+  /*
+   * When closing the Modal, reset the query to display back the whole list view, and route back to the "home page"
+   */
   handleClose() {
     this.setState({ show: false });
     this.props.resetQuery('');
@@ -22,15 +25,21 @@ export default class Fact extends Component {
   getWiki(name, type) {
 
     /*
-     * If the text is stored, no need to fetch it again.
+     * If the text is stored, no need to fetch it from Wikipedia again.
+     * Improves network performance and offline experience.
      */
     if (typeof(Storage) && localStorage[name + ' text']) {
       this.setState({results: localStorage[name + ' text']});
       return;
     }
 
-
-    fetch(`https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=${name.replace(/\s/g, '_')}&exintro=1&imlimit=5`, {
+    /*
+     * Send a request to the Wikipedia api.
+     * The "extract" prop means that we're grabbing the article content.
+     * "exintro = 1" refers to the 1st section of the wikipedia article.
+     * When the article is found, store it locally for later use and render the modal.
+     */
+    fetch(`https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=${name.replace(/\s/g, '_')}&exintro=1`, {
     	headers: {
         'Origin': 'https://cedric-f.github.io/',
     		'Content-Type': 'application/json; charset=utf-8'
@@ -48,6 +57,9 @@ export default class Fact extends Component {
     .catch(e => {console.error(e, localStorage[name + ' text']); this.setState({results: 'Sorry! An error occured and we couldn\'t get the request results. Please check your network and try again.<br/>' + e})})
   }
 
+  /*
+   * Once the component is mounted, get the data to render.
+   */
 	componentDidMount() {
   	const { name, type } = this.props.data.location.state;
 		this.getWiki(name, type);
@@ -77,6 +89,12 @@ export default class Fact extends Component {
             <hr />
 
             <h4 tabIndex="0">History</h4>
+            {
+              /*
+               * The wikipedia article is returned as a raw text,
+               * So we use this method to parse the html tags.
+               */
+            }
             <p dangerouslySetInnerHTML={{__html: this.state.results}} tabIndex="0" />
 
           </Modal.Body>

@@ -20,8 +20,8 @@ export default class List extends Component {
 				<ul className="list-view">
 					{
 						/*
-						 * Loop over the category's locations and for each, and only display those whose name matches the query value.
-						 * An empty query is truthy, so by all the markers are displayed by default.
+						 * Loop over the category's locations and for each, only display those whose name matches the query value.
+						 * Testing a string against an empty string will always be truthy, so all the markers are displayed by default.
 						 * isClicked is true only when clicking on a list-view item.
 						 * When isClicked is true, hide all markers except the clicked location, but keep all list-items available
 						 * so the user can choose another location.
