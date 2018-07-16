@@ -11,6 +11,12 @@ A React Application using the Google Maps API to showcase some of the French leg
 _Cloning the development branch_
 
 ```
+git clone https://github.com/Cedric-F/Medieval-France.git
+```
+
+***or***
+
+```
 git clone --single-branch -b master https://github.com/Cedric-F/Medieval-France.git
 ```
 
