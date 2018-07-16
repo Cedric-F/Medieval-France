@@ -1,375 +1,375 @@
-	{
-		"Castle": [
-			{
-				"type": "Castle",
-				"name": "Palace of Versailles",
-				"thumbnail": "Versailles.webp",
-				"source": "ncsu.edu",
-				"coordinates": {
-					"lat": "48.8049",
-					"lng": "2.1204"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Castelnaud-la-Chapelle",
-				"thumbnail": "Castelnaud.webp",
-				"coordinates": {
-					"lat": "44.8160",
-					"lng": "1.1485"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Chambord",
-				"thumbnail": "Chambord.webp",
-				"coordinates": {
-					"lat": "47.6161",
-					"lng": "1.5172"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Chenonceau",
-				"thumbnail": "Chenonceau.webp",
-				"source": "JF Souchard / Canoë Company",
-				"coordinates": {
-					"lat": "47.3249",
-					"lng": "1.0703"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Villandry",
-				"thumbnail": "Villandry.webp",
-				"source": "thepinsta.com",
-				"coordinates": {
-					"lat": "47.3399",
-					"lng": "0.5143"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Cheverny",
-				"thumbnail": "Cheverny.webp",
-				"source": "wallscover.com",
-				"coordinates": {
-					"lat": "47.5002",
-					"lng": "1.4580"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Vaux-le-Vicomte",
-				"thumbnail": "Vaux-le-Vicomte.webp",
-				"coordinates": {
-					"lat": "48.5658",
-					"lng":"2.7141"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Palace of Fontainebleau",
-				"thumbnail": "Fontainebleau.webp",
-				"coordinates": {
-					"lat": "48.4021",
-					"lng": "2.6995"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château du Haut-Kœnigsbourg",
-				"thumbnail": "Haut-Kœnigsbourg.webp",
-				"coordinates": {
-					"lat": "48.2495",
-					"lng": "7.3445"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Peyrepertuse",
-				"thumbnail": "Peyrepertuse.webp",
-				"coordinates": {
-					"lat": "42.8708",
-					"lng": "2.5554"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château d'Ussé",
-				"thumbnail": "Ussé.webp",
-				"source": "chateaudusse.fr",
-				"coordinates": {
-					"lat": "47.2500",
-					"lng": "0.2913"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château d'Amboise",
-				"thumbnail": "Amboise.webp",
-				"coordinates": {
-					"lat": "47.4134",
-					"lng": "0.9870"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château des ducs de Bretagne",
-				"thumbnail": "Ducs_de_Bretagne.webp",
-				"source": "tripulous.com",
-				"coordinates": {
-					"lat": "47.2163",
-					"lng": "-1.5488"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Valençay",
-				"thumbnail": "Valençay.webp",
-				"coordinates": {
-					"lat": "47.1568",
-					"lng": "1.5592"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Chantilly",
-				"thumbnail": "Chantilly.webp",
-				"source": "skyscrapercity.com",
-				"coordinates": {
-					"lat": "49.1938",
-					"lng": "2.4852"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Loches",
-				"thumbnail": "Loches.webp",
-				"coordinates": {
-					"lat": "47.1249",
-					"lng": "0.9968"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Blois",
-				"thumbnail": "Blois.webp",
-				"source": "ChateauDeBlois.fr",
-				"coordinates": {
-					"lat": "47.5854",
-					"lng": "1.3306"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Saumur",
-				"thumbnail": "Saumur.webp",
-				"source": "levolney.com",
-				"coordinates": {
-					"lat": "47.2570",
-					"lng": "-0.0724"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Bonaguil",
-				"thumbnail": "Bonaguil.webp",
-				"source": "SudOuest.fr",
-				"coordinates": {
-					"lat": "44.5382",
-					"lng": "1.0143"
-				}
-			},
-			{
-				"type": "Castle",
-				"name": "Château de Langeais",
-				"thumbnail": "Langeais.webp",
-				"coordinates": {
-					"lat": "47.3247",
-					"lng": "0.4062"
-				}
-			}
-		],
-		"Cathedral": [
-			{
-				"type": "Cathedral",
-				"name": "Chartres Cathedral",
-				"thumbnail": "Chartres.webp",
-				"coordinates": {
-					"lat": "48.4478",
-					"lng": "1.4878"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Strasbourg Cathedral",
-				"thumbnail": "Strasbourg.webp",
-				"source": "theculturetrip.com",
-				"coordinates": {
-					"lat": "48.5819",
-					"lng": "7.7510"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Notre-Dame de Paris",
-				"thumbnail": "Paris-Cathedral.webp",
-				"coordinates": {
-					"lat": "48.8530",
-					"lng": "2.3499"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Reims Cathedral",
-				"thumbnail": "Reims.webp",
-				"coordinates": {
-					"lat": "49.2539",
-					"lng": "4.0340"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Rouen Cathedral",
-				"thumbnail": "Rouen.webp",
-				"source": "flickr.com",
-				"coordinates": {
-					"lat": "49.4402",
-					"lng": "1.0950"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Amiens Cathedral",
-				"thumbnail": "Amiens.webp",
-				"source": "MagnoliaBox.com",
-				"coordinates": {
-					"lat": "49.8946",
-					"lng": "2.3020"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Albi Cathedral",
-				"thumbnail": "Albi.webp",
-				"coordinates": {
-					"lat": "43.9283",
-					"lng": "2.1426"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Metz Cathedral",
-				"thumbnail": "Metz.webp",
-				"source": "gites.fr",
-				"coordinates": {
-					"lat": "49.1203",
-					"lng": "6.1758"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Bourges Cathedral",
-				"thumbnail": "Bourges.webp",
-				"coordinates": {
-					"lat": "47.0822",
-					"lng": "2.3992"
-				}
-			},
-			{
-				"type": "Cathedral",
-				"name": "Beauvais Cathedral",
-				"thumbnail": "Beauvais.webp",
-				"coordinates": {
-					"lat": "49.4326",
-					"lng": "2.0815"
-				}
-			}
-		],
-		"City": [
-			{
-				"type": "City",
-				"name": "Avignon",
-				"thumbnail": "Avignon.webp",
-				"coordinates": {
-					"lat":  "43.9493",
-					"lng": "4.8055"
-				}
-			},
-			 {
-			 	"type": "City",
-				"name": "Carcassonne",
-				"thumbnail": "Carcassonne.webp",
-				"coordinates": {
-					"lat":  "43.2122",
-					"lng": "2.3537"
-				}
-			},
-			 {
-			 	"type": "City",
-				"name": "Guérande",
-				"thumbnail": "Guérande.webp",
-				"coordinates": {
-					"lat":  "47.3280",
-					"lng": "-2.4298"
-				}
-			},
-			 {
-			 	"type": "City",
-				"name": "Laon",
-				"thumbnail": "Laon.webp",
-				"coordinates": {
-					"lat":  "49.5641",
-					"lng": "3.6199"
-				}
-			},
-			 {
-			 	"type": "City",
-				"name": "Lyon",
-				"thumbnail": "Lyon.webp",
-				"source": "AirCorsica.com",
-				"coordinates": {
-					"lat":  "45.7640",
-					"lng": "4.8357"
-				}
-			},
-			 {
-			 	"type": "City",
-				"name": "Orléans",
-				"thumbnail": "Orléans.webp",
-				"coordinates": {
-					"lat":  "47.9030",
-					"lng": "1.9093"
-				}
-			},
-			{
-				"type": "City",
-				"name": "Paris",
-				"thumbnail": "Paris.webp",
-				"coordinates": {
-					"lat":  "48.8566",
-					"lng": "2.3522"
-				}
-			},
-			 {
-			 	"type": "City",
-				"name": "Provins",
-				"thumbnail": "Provins.webp",
-				"coordinates": {
-					"lat":  "48.5601",
-					"lng": "3.2992"
-				}
-			},
-			 {
-			 	"type": "City",
-				"name": "Saint-Malo",
-				"thumbnail": "Saint-Malo.webp",
-				"source": "EnNormandie.com",
-				"coordinates": {
-					"lat":  "48.6493",
-					"lng": "-2.0257"
-				}
-			}
-		]
-	}
+  {
+    "Castle": [
+      {
+        "type": "Castle",
+        "name": "Palace of Versailles",
+        "thumbnail": "Versailles.webp",
+        "source": "ncsu.edu",
+        "coordinates": {
+          "lat": "48.8049",
+          "lng": "2.1204"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Castelnaud-la-Chapelle",
+        "thumbnail": "Castelnaud.webp",
+        "coordinates": {
+          "lat": "44.8160",
+          "lng": "1.1485"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Chambord",
+        "thumbnail": "Chambord.webp",
+        "coordinates": {
+          "lat": "47.6161",
+          "lng": "1.5172"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Chenonceau",
+        "thumbnail": "Chenonceau.webp",
+        "source": "JF Souchard / Canoë Company",
+        "coordinates": {
+          "lat": "47.3249",
+          "lng": "1.0703"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Villandry",
+        "thumbnail": "Villandry.webp",
+        "source": "thepinsta.com",
+        "coordinates": {
+          "lat": "47.3399",
+          "lng": "0.5143"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Cheverny",
+        "thumbnail": "Cheverny.webp",
+        "source": "wallscover.com",
+        "coordinates": {
+          "lat": "47.5002",
+          "lng": "1.4580"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Vaux-le-Vicomte",
+        "thumbnail": "Vaux-le-Vicomte.webp",
+        "coordinates": {
+          "lat": "48.5658",
+          "lng":"2.7141"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Palace of Fontainebleau",
+        "thumbnail": "Fontainebleau.webp",
+        "coordinates": {
+          "lat": "48.4021",
+          "lng": "2.6995"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château du Haut-Kœnigsbourg",
+        "thumbnail": "Haut-Kœnigsbourg.webp",
+        "coordinates": {
+          "lat": "48.2495",
+          "lng": "7.3445"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Peyrepertuse",
+        "thumbnail": "Peyrepertuse.webp",
+        "coordinates": {
+          "lat": "42.8708",
+          "lng": "2.5554"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château d'Ussé",
+        "thumbnail": "Ussé.webp",
+        "source": "chateaudusse.fr",
+        "coordinates": {
+          "lat": "47.2500",
+          "lng": "0.2913"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château d'Amboise",
+        "thumbnail": "Amboise.webp",
+        "coordinates": {
+          "lat": "47.4134",
+          "lng": "0.9870"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château des ducs de Bretagne",
+        "thumbnail": "Ducs_de_Bretagne.webp",
+        "source": "tripulous.com",
+        "coordinates": {
+          "lat": "47.2163",
+          "lng": "-1.5488"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Valençay",
+        "thumbnail": "Valençay.webp",
+        "coordinates": {
+          "lat": "47.1568",
+          "lng": "1.5592"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Chantilly",
+        "thumbnail": "Chantilly.webp",
+        "source": "skyscrapercity.com",
+        "coordinates": {
+          "lat": "49.1938",
+          "lng": "2.4852"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Loches",
+        "thumbnail": "Loches.webp",
+        "coordinates": {
+          "lat": "47.1249",
+          "lng": "0.9968"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Blois",
+        "thumbnail": "Blois.webp",
+        "source": "ChateauDeBlois.fr",
+        "coordinates": {
+          "lat": "47.5854",
+          "lng": "1.3306"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Saumur",
+        "thumbnail": "Saumur.webp",
+        "source": "levolney.com",
+        "coordinates": {
+          "lat": "47.2570",
+          "lng": "-0.0724"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Bonaguil",
+        "thumbnail": "Bonaguil.webp",
+        "source": "SudOuest.fr",
+        "coordinates": {
+          "lat": "44.5382",
+          "lng": "1.0143"
+        }
+      },
+      {
+        "type": "Castle",
+        "name": "Château de Langeais",
+        "thumbnail": "Langeais.webp",
+        "coordinates": {
+          "lat": "47.3247",
+          "lng": "0.4062"
+        }
+      }
+    ],
+    "Cathedral": [
+      {
+        "type": "Cathedral",
+        "name": "Chartres Cathedral",
+        "thumbnail": "Chartres.webp",
+        "coordinates": {
+          "lat": "48.4478",
+          "lng": "1.4878"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Strasbourg Cathedral",
+        "thumbnail": "Strasbourg.webp",
+        "source": "theculturetrip.com",
+        "coordinates": {
+          "lat": "48.5819",
+          "lng": "7.7510"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Notre-Dame de Paris",
+        "thumbnail": "Paris-Cathedral.webp",
+        "coordinates": {
+          "lat": "48.8530",
+          "lng": "2.3499"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Reims Cathedral",
+        "thumbnail": "Reims.webp",
+        "coordinates": {
+          "lat": "49.2539",
+          "lng": "4.0340"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Rouen Cathedral",
+        "thumbnail": "Rouen.webp",
+        "source": "flickr.com",
+        "coordinates": {
+          "lat": "49.4402",
+          "lng": "1.0950"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Amiens Cathedral",
+        "thumbnail": "Amiens.webp",
+        "source": "MagnoliaBox.com",
+        "coordinates": {
+          "lat": "49.8946",
+          "lng": "2.3020"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Albi Cathedral",
+        "thumbnail": "Albi.webp",
+        "coordinates": {
+          "lat": "43.9283",
+          "lng": "2.1426"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Metz Cathedral",
+        "thumbnail": "Metz.webp",
+        "source": "gites.fr",
+        "coordinates": {
+          "lat": "49.1203",
+          "lng": "6.1758"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Bourges Cathedral",
+        "thumbnail": "Bourges.webp",
+        "coordinates": {
+          "lat": "47.0822",
+          "lng": "2.3992"
+        }
+      },
+      {
+        "type": "Cathedral",
+        "name": "Beauvais Cathedral",
+        "thumbnail": "Beauvais.webp",
+        "coordinates": {
+          "lat": "49.4326",
+          "lng": "2.0815"
+        }
+      }
+    ],
+    "City": [
+      {
+        "type": "City",
+        "name": "Avignon",
+        "thumbnail": "Avignon.webp",
+        "coordinates": {
+          "lat":  "43.9493",
+          "lng": "4.8055"
+        }
+      },
+       {
+         "type": "City",
+        "name": "Carcassonne",
+        "thumbnail": "Carcassonne.webp",
+        "coordinates": {
+          "lat":  "43.2122",
+          "lng": "2.3537"
+        }
+      },
+       {
+         "type": "City",
+        "name": "Guérande",
+        "thumbnail": "Guérande.webp",
+        "coordinates": {
+          "lat":  "47.3280",
+          "lng": "-2.4298"
+        }
+      },
+       {
+         "type": "City",
+        "name": "Laon",
+        "thumbnail": "Laon.webp",
+        "coordinates": {
+          "lat":  "49.5641",
+          "lng": "3.6199"
+        }
+      },
+       {
+         "type": "City",
+        "name": "Lyon",
+        "thumbnail": "Lyon.webp",
+        "source": "AirCorsica.com",
+        "coordinates": {
+          "lat":  "45.7640",
+          "lng": "4.8357"
+        }
+      },
+       {
+         "type": "City",
+        "name": "Orléans",
+        "thumbnail": "Orléans.webp",
+        "coordinates": {
+          "lat":  "47.9030",
+          "lng": "1.9093"
+        }
+      },
+      {
+        "type": "City",
+        "name": "Paris",
+        "thumbnail": "Paris.webp",
+        "coordinates": {
+          "lat":  "48.8566",
+          "lng": "2.3522"
+        }
+      },
+       {
+         "type": "City",
+        "name": "Provins",
+        "thumbnail": "Provins.webp",
+        "coordinates": {
+          "lat":  "48.5601",
+          "lng": "3.2992"
+        }
+      },
+       {
+         "type": "City",
+        "name": "Saint-Malo",
+        "thumbnail": "Saint-Malo.webp",
+        "source": "EnNormandie.com",
+        "coordinates": {
+          "lat":  "48.6493",
+          "lng": "-2.0257"
+        }
+      }
+    ]
+  }

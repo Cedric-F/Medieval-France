@@ -40,19 +40,19 @@ export default class Fact extends Component {
      * When the article is found, store it locally for later use and render the modal.
      */
     fetch(`https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=${name.replace(/\s/g, '_')}&exintro=1`, {
-    	headers: {
+      headers: {
         'Origin': 'https://cedric-f.github.io/',
-    		'Content-Type': 'application/json; charset=utf-8'
-    	}
+        'Content-Type': 'application/json; charset=utf-8'
+      }
     })
     .then(r => r.json())
     .then(r => {
-    	let element = r.query.pages[Object.keys(r.query.pages)[0]];
+      let element = r.query.pages[Object.keys(r.query.pages)[0]];
       /*
        * cache the text for later (offline ?) use.
        */
       localStorage.setItem(name + ' text', element.extract);
-    	this.setState({results: element.extract});
+      this.setState({results: element.extract});
     })
     .catch(e => {console.error(e, localStorage[name + ' text']); this.setState({results: 'Sorry! An error occured and we couldn\'t get the request results. Please check your network and try again.<br/>' + e})})
   }
@@ -60,16 +60,16 @@ export default class Fact extends Component {
   /*
    * Once the component is mounted, get the data to render.
    */
-	componentDidMount() {
-  	const { name, type } = this.props.data.location.state;
-		this.getWiki(name, type);
-	}
+  componentDidMount() {
+    const { name, type } = this.props.data.location.state;
+    this.getWiki(name, type);
+  }
 
   render() {
     const { name, type, photo, source } = this.props.data.location.state;
-  	const tooltip = (
-  		<Tooltip id="modal-tooltip" tabIndex="0">{source ? `Wikipedia and ${source}` : 'Wikipedia'}</Tooltip>
-  	);
+    const tooltip = (
+      <Tooltip id="modal-tooltip" tabIndex="0">{source ? `Wikipedia and ${source}` : 'Wikipedia'}</Tooltip>
+    );
 
     return (
       <div>
@@ -80,8 +80,8 @@ export default class Fact extends Component {
           <Modal.Body>
             <h4>{type}</h4>
             <p>
-            	<Image src={require(`../images/photos/${photo}`)} alt={`A photo of ${name}`} tabIndex="0" responsive />
-            	<OverlayTrigger overlay={tooltip}>
+              <Image src={require(`../images/photos/${photo}`)} alt={`A photo of ${name}`} tabIndex="0" responsive />
+              <OverlayTrigger overlay={tooltip}>
                 <a href={`https://en.wikipedia.org/wiki/${name}`} target='_blank'>Sources</a>
               </OverlayTrigger>
             </p>

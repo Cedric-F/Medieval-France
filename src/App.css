@@ -15,8 +15,8 @@
 }
 
 .app {
-	display: flex;
-	height: 100vh;
+  display: flex;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -64,7 +64,7 @@ h1 {
   position: absolute;
   transform: translate(-50%, -100%);
   cursor: pointer;
-	animation: bounce 1s ease-out;
+  animation: bounce 1s ease-out;
 }
 
 .marker a,
@@ -76,9 +76,9 @@ h1 {
 
 .side-wrap {
   width: 0px;
-	height: 100%;
-	background: url(./images/Side.webp) no-repeat;
-	background-size: 100% 100%;
+  height: 100%;
+  background: url(./images/Side.webp) no-repeat;
+  background-size: 100% 100%;
 }
 
 .side-wrap.toggle {
@@ -87,10 +87,10 @@ h1 {
 }
 
 .side-panel {
-	height: 100%;
-	overflow-y: auto;
-	color: black;
-	text-shadow: 1px 0 #999;
+  height: 100%;
+  overflow-y: auto;
+  color: black;
+  text-shadow: 1px 0 #999;
 }
 
 .input-label {
@@ -98,13 +98,13 @@ h1 {
 }
 
 .search-input {
-	display: block;
-	margin: 10px auto;
+  display: block;
+  margin: 10px auto;
 }
 
 .list-view {
-	list-style-type: none;
-	padding: 10px;
+  list-style-type: none;
+  padding: 10px;
 }
 
 .list-view a,
@@ -119,18 +119,18 @@ h1 {
 .list-view-title {
   margin: 0 auto;
   width: 175px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .list-view-item {
   padding: 5px;
-	margin: 5px 0;
-	font-family: 'Cardinal';
-	font-size: 1.5em;
-	font-weight: 700;
-	cursor: pointer;
+  margin: 5px 0;
+  font-family: 'Cardinal';
+  font-size: 1.5em;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .list-view-item:hover {
@@ -162,29 +162,29 @@ h1 {
 
 @keyframes bounce {
   0%, 5% {
-	transform:translate(-50%, -200%);
+  transform:translate(-50%, -200%);
     opacity: 0;
   }
   15%, 40%, 70%, 90%, 97% {
-  	transform:translate(-50%, -100%);
+    transform:translate(-50%, -100%);
   }
   30% {
-  	transform:translate(-50%, -150%);
+    transform:translate(-50%, -150%);
   }
   50% {
-  	transform:translate(-50%, -130%);
+    transform:translate(-50%, -130%);
   }
   80% {
-  	transform:translate(-50%, -115%);
+    transform:translate(-50%, -115%);
   }
   95% {
-  	transform:translate(-50%, -107%);
+    transform:translate(-50%, -107%);
   }
   99% {
-  	transform:translate(-50%, -103%);
+    transform:translate(-50%, -103%);
   }
   100% {
-  	transform:translate(-50%, -100%);
+    transform:translate(-50%, -100%);
     opacity: 1;
   }
 }

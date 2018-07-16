@@ -5,7 +5,7 @@ import Marker from './Marker';
 
 export default class Map extends Component {
 
-	static defaultProps = {
+  static defaultProps = {
     center: {
       lat: 48,
       lng: 2.3522
@@ -19,14 +19,14 @@ export default class Map extends Component {
    * Most important one is the custom style.
    */
   mapOptions() {
-  	return {
-  		scrollwheel: true,
-  		mapTypeControl: true,
-	    mapTypeControlOptions: {
-	      mapTypeIds: ['terrain']
-	    },
-  		styles: this.props.style
-  	}
+    return {
+      scrollwheel: true,
+      mapTypeControl: true,
+      mapTypeControlOptions: {
+        mapTypeIds: ['terrain']
+      },
+      styles: this.props.style
+    }
   }
 
   /*
@@ -69,6 +69,6 @@ export default class Map extends Component {
 
         </GoogleMapReact>
       </main>
-  	);
+    );
   }
 }
