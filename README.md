@@ -121,5 +121,5 @@ Tested on:
 
 * Chrome
 * Chrome Canary
-* FireFox
+* FireFox (65+)
 * FireFox Dev Edition
