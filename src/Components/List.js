@@ -15,7 +15,7 @@ export default class List extends Component {
       <div>
         <div className="list-view-title" tabIndex="0" aria-label={`List of ${type}s.`}>
           <img src={require(`../icons/${type}.webp`)} alt={type + ' logo'}/>
-          <h1>{type}</h1>
+          <h2>{type}</h2>
         </div>
         <ul className="list-view">
           {

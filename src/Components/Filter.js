@@ -21,6 +21,7 @@ export default class Filter extends Component {
     return (
       <aside className={`side-wrap ${toggled && 'toggle'}`}>
         <div className="side-panel">
+          <h1>List view</h1>
           <label htmlFor="search" className="input-label" tabIndex="0">Search</label>
           {/*
             * The input field receives the App's "handleQuery" method passed down as a the "query" prop.

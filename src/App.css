@@ -21,8 +21,15 @@
 }
 
 h1 {
+  background-color: #333B;
+
+}
+
+h1,
+h2 {
   font-family: 'Cardinal';
   text-align: center;
+  margin: 5px 0;
 }
 
 .toggle-btn {
@@ -79,6 +86,7 @@ h1 {
   height: 100%;
   background: url(./images/Side.webp) no-repeat;
   background-size: 100% 100%;
+  transition: 0.3s;
 }
 
 .side-wrap.toggle {
@@ -89,8 +97,8 @@ h1 {
 .side-panel {
   height: 100%;
   overflow-y: auto;
-  color: black;
-  text-shadow: 1px 0 #999;
+  color: #fefee2;
+  background: #333D;
 }
 
 .input-label {
@@ -98,13 +106,19 @@ h1 {
 }
 
 .search-input {
+  width: 100%;
   display: block;
   margin: 10px auto;
+  padding: 5px;
+  color: black;
+  border: none;
+  border-radius: 5px;
 }
 
 .list-view {
   list-style-type: none;
-  padding: 10px;
+  padding: 0;
+  letter-spacing: 2px;
 }
 
 .list-view a,
@@ -118,15 +132,21 @@ h1 {
 
 .list-view-title {
   margin: 0 auto;
-  width: 175px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  cursor: default;
+  pointer-events: none;
+  background-color: #333E;
+  padding: 0;
+}
+
+.list-view-title img {
+  margin: 0 10px;
 }
 
 .list-view-item {
-  padding: 5px;
-  margin: 5px 0;
+  padding: 10px 10px;
+  margin: 0;
   font-family: 'Cardinal';
   font-size: 1.5em;
   font-weight: 700;
@@ -134,7 +154,8 @@ h1 {
 }
 
 .list-view-item:hover {
-  background-color: rgba(251, 252, 253, 153);
+  /*background-color: rgba(251, 252, 253, 153);*/
+  background-color: #333A;
 }
 
 .back-to-top {
