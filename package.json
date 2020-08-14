@@ -4,15 +4,16 @@
   "private": true,
   "homepage": "https://cedric-f.github.io/Medieval-France/",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
+    "dotenv": "^8.2.0",
     "gh-pages": "^1.2.0",
     "google-map-react": "^1.0.5",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.13.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +22,17 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

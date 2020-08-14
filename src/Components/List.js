@@ -5,6 +5,7 @@ export default class List extends Component {
 
   handleClick(e) {
     this.props.query(e.target.textContent, true);
+    console.log(this);
   }
 
   render() {

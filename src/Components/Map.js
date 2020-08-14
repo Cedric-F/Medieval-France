@@ -3,6 +3,8 @@ import GoogleMapReact from 'google-map-react';
 import { Glyphicon, Button } from 'react-bootstrap';
 import Marker from './Marker';
 
+require('dotenv').config();
+
 export default class Map extends Component {
 
   static defaultProps = {
@@ -51,7 +53,7 @@ export default class Map extends Component {
         </Button>
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: 'AIzaSyDHQmuUZanQp42dV8KlcM_pcUx2jv0Nw4I', // Enable the Google Maps API
+            key: process.env.REACT_APP_API_KEY, // Enable the Google Maps API
             languages: ['en', 'fr'],
             libraries:'places'
           }}

@@ -82,7 +82,7 @@ export default class Fact extends Component {
             <p>
               <Image src={require(`../images/photos/${photo}`)} alt={`A photo of ${name}`} tabIndex="0" responsive />
               <OverlayTrigger overlay={tooltip}>
-                <a href={`https://en.wikipedia.org/wiki/${name}`} target='_blank'>Sources</a>
+                <a href={`https://en.wikipedia.org/wiki/${name}`} target='_blank' rel="noopener noreferrer" >Sources</a>
               </OverlayTrigger>
             </p>
 
