@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Medieval-France/precache-manifest.563cc91e5b27fb108e3b5eab4e31b812.js"
+  "/Medieval-France/precache-manifest.f3ebbc2d2fb0095f7853aabe822d8456.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Medieval-France/static/css/main.01af40a1.chunk.css",
-    "main.js": "/Medieval-France/static/js/main.a18e0d97.chunk.js",
-    "main.js.map": "/Medieval-France/static/js/main.a18e0d97.chunk.js.map",
+    "main.js": "/Medieval-France/static/js/main.fbabc3b1.chunk.js",
+    "main.js.map": "/Medieval-France/static/js/main.fbabc3b1.chunk.js.map",
     "runtime-main.js": "/Medieval-France/static/js/runtime-main.ada9ae61.js",
     "runtime-main.js.map": "/Medieval-France/static/js/runtime-main.ada9ae61.js.map",
     "static/css/2.e232d06b.chunk.css": "/Medieval-France/static/css/2.e232d06b.chunk.css",
-    "static/js/2.842a1f16.chunk.js": "/Medieval-France/static/js/2.842a1f16.chunk.js",
-    "static/js/2.842a1f16.chunk.js.map": "/Medieval-France/static/js/2.842a1f16.chunk.js.map",
+    "static/js/2.c9ac85b7.chunk.js": "/Medieval-France/static/js/2.c9ac85b7.chunk.js",
+    "static/js/2.c9ac85b7.chunk.js.map": "/Medieval-France/static/js/2.c9ac85b7.chunk.js.map",
     "index.html": "/Medieval-France/index.html",
-    "precache-manifest.563cc91e5b27fb108e3b5eab4e31b812.js": "/Medieval-France/precache-manifest.563cc91e5b27fb108e3b5eab4e31b812.js",
+    "precache-manifest.f3ebbc2d2fb0095f7853aabe822d8456.js": "/Medieval-France/precache-manifest.f3ebbc2d2fb0095f7853aabe822d8456.js",
     "service-worker.js": "/Medieval-France/service-worker.js",
     "static/css/2.e232d06b.chunk.css.map": "/Medieval-France/static/css/2.e232d06b.chunk.css.map",
     "static/css/main.01af40a1.chunk.css.map": "/Medieval-France/static/css/main.01af40a1.chunk.css.map",
-    "static/js/2.842a1f16.chunk.js.LICENSE.txt": "/Medieval-France/static/js/2.842a1f16.chunk.js.LICENSE.txt",
+    "static/js/2.c9ac85b7.chunk.js.LICENSE.txt": "/Medieval-France/static/js/2.c9ac85b7.chunk.js.LICENSE.txt",
     "static/media/Albi.webp": "/Medieval-France/static/media/Albi.e9e177b7.webp",
     "static/media/Amboise.webp": "/Medieval-France/static/media/Amboise.2bb69c2a.webp",
     "static/media/Amiens.webp": "/Medieval-France/static/media/Amiens.0a439539.webp",
@@ -62,8 +62,8 @@
   "entrypoints": [
     "static/js/runtime-main.ada9ae61.js",
     "static/css/2.e232d06b.chunk.css",
-    "static/js/2.842a1f16.chunk.js",
+    "static/js/2.c9ac85b7.chunk.js",
     "static/css/main.01af40a1.chunk.css",
-    "static/js/main.a18e0d97.chunk.js"
+    "static/js/main.fbabc3b1.chunk.js"
   ]
 }

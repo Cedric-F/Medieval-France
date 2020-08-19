@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4204991eda8737309fd8aa5e4bec58c2",
+    "revision": "97d977bcf1a142edb3a664df7ed067d0",
     "url": "/Medieval-France/index.html"
   },
   {
-    "revision": "efbd198d645f034d2eea",
+    "revision": "b8f82877f427ddf5e643",
     "url": "/Medieval-France/static/css/2.e232d06b.chunk.css"
   },
   {
-    "revision": "92f365d0b9cb9de7dd07",
+    "revision": "95d99e548d7c4785b32f",
     "url": "/Medieval-France/static/css/main.01af40a1.chunk.css"
   },
   {
-    "revision": "efbd198d645f034d2eea",
-    "url": "/Medieval-France/static/js/2.842a1f16.chunk.js"
+    "revision": "b8f82877f427ddf5e643",
+    "url": "/Medieval-France/static/js/2.c9ac85b7.chunk.js"
   },
   {
     "revision": "ef2604c85f2807d72169a5c7b77c751c",
-    "url": "/Medieval-France/static/js/2.842a1f16.chunk.js.LICENSE.txt"
+    "url": "/Medieval-France/static/js/2.c9ac85b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "92f365d0b9cb9de7dd07",
-    "url": "/Medieval-France/static/js/main.a18e0d97.chunk.js"
+    "revision": "95d99e548d7c4785b32f",
+    "url": "/Medieval-France/static/js/main.fbabc3b1.chunk.js"
   },
   {
     "revision": "63b0af4e80940c93deb1",
